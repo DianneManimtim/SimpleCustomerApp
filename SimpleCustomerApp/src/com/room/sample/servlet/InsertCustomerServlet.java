@@ -13,6 +13,7 @@ import com.room.sample.view.Customer;
 public class InsertCustomerServlet extends HttpServlet{
 
     private static final long serialVersionUID = 1L;
+    private static final String TAG = "InsertCustomerServlet"
 
 
     public void doPost(HttpServletRequest request, HttpServletResponse response){
@@ -36,7 +37,7 @@ public class InsertCustomerServlet extends HttpServlet{
            
         } catch (Exception e) {
             //e.printStackTrace();
-            System.err.println(e);
+            Log.e(TAG, e)
         } 
         
     }
