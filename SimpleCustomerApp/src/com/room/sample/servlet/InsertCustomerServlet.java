@@ -35,7 +35,8 @@ public class InsertCustomerServlet extends HttpServlet{
             dispatcher.forward(request, response);
            
         } catch (Exception e) {
-            e.printStackTrace();
+            //e.printStackTrace();
+            System.err.println(e);
         } 
         
     }
